@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<title>Bunny and Kitty</title>
-	<link rel="stylesheet" href="assets/styles/style.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
 </head>
-
 <body>
 	<header>
-		<div class="wrapper">
-			<h2>Patrick & Sylvia</h2>
+		<div class="logo">
+			<img src="./public/assets/ps_logo.png" alt="">
+		</div>
+		<div class="wrapper intro">
 			<nav>
-				<ul>
+				<ul class="upperCase_heading">
 					<li>
 						<a href="">rsvp</a>
 					</li>
@@ -27,28 +27,29 @@
 				</ul>
 			</nav>
 			<div class="hero">
-				<h1>are getting married</h1>
-				<h3>09.28.18</h3>
+				<h1>Patrick & Sylvia</h1>
+				<h3 class="upperCase_heading">09.28.18</h3>
 			</div>
 		</div>
 	</header>
-	<section>
-		<div class="about">
-			<div class="wrapper">
-				<div class="about__text">
-					<img src="">
-					<h4>sylvia + patrick</h4>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-						aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-						occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				</div>
+	<section class="about">
+		<div class="wrapper about__wrapper">
+			<h2 class="about--heading">Bride & Groom</h2>
+			<figure>
+				<img src="./public/assets/sylvia-patrick-about.jpg">
+			</figure>
+			<div class="about__text">
+				<h4 class="upperCase_heading">sylvia + patrick</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem atque culpa minus provident dolore, commodi quia corporis fugit porro laborum possimus quas ullam doloremque nostrum reiciendis ratione error. Quam, quasi!</p>
 			</div>
 		</div>
 	</section>
 	<section class="countdown">
 		<div class="wrapper">
-			<h4>We will say yes in...</h4>
+			<h3>We will say yes in...</h3>
 			<ul>
 				<li>
 					<p>275</p>
@@ -70,12 +71,16 @@
 		</div>
 	</section>
 	<section class="rsvp">
-		<h2>will you attend?</h2>
-
-		<form>
-
-			<input type="text" name="">
-		</form>
+		<div class="wrapper">
+			<h2>will you attend?</h2>
+			<form>
+				<input type="text" name="">
+				<input type="text" name="">
+				<input type="text" name="">
+				<input type="text" name="">
+				<input type="text" name="">
+			</form>
+		</div>
 	</section>
 
 </body>

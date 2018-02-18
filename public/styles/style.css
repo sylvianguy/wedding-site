@@ -1,3 +1,7 @@
+@font-face {
+  font-family: summerFont;
+  src: url(../font/SummerFestival-Alt.ttf); }
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
 
@@ -132,9 +136,185 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.container {
-  max-width: 900px;
-  margin: 0 auto; }
+html {
+  font-size: 62.5%; }
 
 body {
-  background: darkcyan; }
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 300;
+  background: #3D4859;
+  line-height: 2.6rem;
+  color: #c8c8c8; }
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 0; }
+
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 400;
+  color: #DEB886; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  color: #DEB886; }
+
+h1 {
+  font-family: summerFont;
+  font-size: 10rem;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 1; }
+
+h2 {
+  font-family: summerFont;
+  font-size: 10rem; }
+  h2.about--heading {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -7px;
+    transform: translateX(-50%); }
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  text-align: center; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+section {
+  margin-bottom: 100px; }
+
+header {
+  background: url(../assets/bg_header.png);
+  background-color: #3D4859;
+  background-size: 100%;
+  height: 100vh;
+  background-repeat: no-repeat; }
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+  padding: 20px 0; }
+
+.intro {
+  border-top: 2px solid #DEB886; }
+
+nav {
+  margin-bottom: 3rem; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    max-width: 450px;
+    margin: 0 auto; }
+    nav ul li a {
+      text-decoration: none;
+      font-weight: 400; }
+
+.upperCase_heading, .countdown ul li p:last-child {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 1.6rem;
+  color: #DEB886; }
+  .upperCase_heading li a, .countdown ul li p:last-child li a {
+    color: #DEB886; }
+
+.hero {
+  background: url(../assets/sylvia-patrick-header.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -43px;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  color: #DEB886; }
+  .hero:after {
+    content: '';
+    background: rgba(119, 126, 131, 0.29);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0; }
+
+.about {
+  margin-top: 200px;
+  background-image: url(../assets/bg_about.png);
+  background-repeat: no-repeat;
+  background-position-y: -8px;
+  background-size: 80%; }
+
+.about__wrapper {
+  display: flex;
+  background: #353E44;
+  padding-bottom: 0;
+  position: relative; }
+  .about__wrapper figure {
+    width: 45%;
+    min-height: 200px;
+    position: relative;
+    top: -100px;
+    left: 50px; }
+    .about__wrapper figure:after {
+      content: '';
+      background: rgba(119, 126, 131, 0.29);
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0; }
+
+.about__text {
+  background: #353E44;
+  width: 50%;
+  padding: 50px 0 0px 90px; }
+
+.countdown {
+  width: 100%;
+  min-height: 400px;
+  background-image: linear-gradient(rgba(53, 62, 68, 0.45), rgba(53, 62, 68, 0.45)), url(../assets/sylvia-patrick-count.jpg);
+  background-size: cover;
+  background-position: center; }
+  .countdown ul {
+    display: flex;
+    max-width: 700px;
+    justify-content: space-between;
+    margin: 0 auto; }
+    .countdown ul li p:first-child {
+      font-size: 6rem;
+      font-family: Georgia, "Times New Roman", serif;
+      margin-bottom: 33px; }
+  .countdown h3 {
+    margin-top: 50px; }
+
+.rsvp {
+  min-height: 500px; }
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  form input {
+    width: 47%;
+    margin-bottom: 30px;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c8c8c8; }

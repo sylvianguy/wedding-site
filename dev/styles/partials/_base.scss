@@ -1,0 +1,72 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: $body-font;
+	font-size: 1.6rem;
+	font-weight: 300;
+	background: $navy;
+	line-height: 2.6rem;
+	color: $text-grey-light
+}
+
+.wrapper {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+
+h1,
+h2,
+h3,
+h4,{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	font-weight: 400;
+	color: $accent-color;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	color: $accent-color;
+}
+
+h1 {
+	font-family: summerFont;
+	font-size: 10rem;
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 1;
+}
+
+h2 {
+	font-family: summerFont;
+	font-size: 10rem;
+	&.about--heading {
+		position: absolute;
+		z-index: 1;
+		left: 50%;
+		top: -7px;
+		transform: translateX(-50%);
+	}
+}
+
+h3 {
+	font-family: $body-font;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 3rem;
+	text-align: center;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+section {
+	margin-bottom: 100px;
+}
