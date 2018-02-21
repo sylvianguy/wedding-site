@@ -9,6 +9,7 @@
     url(../assets/sylvia-patrick-count.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 
   ul {
     display: flex;
@@ -16,13 +17,9 @@
     justify-content: space-between;
     margin: 0 auto;
     li {
-      p:first-child {
-        font-size: 6rem;
-        font-family: Georgia, "Times New Roman", serif;
-        margin-bottom: 33px;
-      }
-      p:last-child {
+      h3:last-child {
         @extend .upperCase_heading;
+        font-weight: 300;
       }
     }
   }

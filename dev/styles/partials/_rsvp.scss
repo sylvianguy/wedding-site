@@ -1,17 +1,56 @@
 .rsvp {
-  min-height: 500px;
+  min-height: 700px;
+  background-image: url(../assets/bg_form_section.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-size: cover;
+  padding-top: 140px;
 }
 
 form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  input {
+  margin-top: 100px;
+  background: $dark-navy;
+  padding: 40px;
+  input[type="text"],
+  textarea,
+  select {
     width: 47%;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     background: none;
     border: none;
     outline: none;
-    border-bottom: 1px solid $text-grey-light;
+    border-bottom: 2px solid $text-grey-light;
+    color: $text-grey-light;
+    padding: 10px;
+    &:nth-child(5n + 5) {
+      width: 100%;
+    }
+  }
+  textarea,
+  input[type="submit"] {
+    width: 100%;
+  }
+  h4 {
+    @extend .upperCase_heading;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  h5 {
+    margin-top: 42px;
+  }
+  input[type="submit"] {
+    width: 200px;
+    padding: 15px;
+    background: none;
+    margin: 0 auto;
+    color: $accent-color;
+    border: 1px solid $accent-color;
+    @extend .upperCase_heading;
+    text-align: center;
+    font-weight: 300;
   }
 }
