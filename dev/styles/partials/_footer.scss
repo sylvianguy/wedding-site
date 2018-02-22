@@ -1,0 +1,13 @@
+footer {
+	background: $dark-navy;
+}
+
+.rights.upperCase_heading p {
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1rem;
+	color: darken($text-grey-light, 15%);
+	line-height: 22px;
+	border-top: 1px solid $accent-color;
+	padding-top: 30px;
+}

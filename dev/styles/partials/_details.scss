@@ -16,16 +16,23 @@
 		padding-bottom: 0;
 	}
 	h4 {
-		margin: 65px 0;
+		margin: 65px 0 90px 0;
 	}
 	.details__wrap {
 		width: 45%;
 		margin-bottom: 40px;
 		.details__block {
 			margin-bottom: 40px;
+			li {
+				font-size: 1.7rem;
+				letter-spacing: 0.2rem;
+				color: $text-grey-light;
+			}
 		}
 		h3 {
 			text-align: left;
+			font-weight: 300;
+			font-size: 1.8rem;
 		}
 		a {
 			border-bottom: 1px solid $text-grey-light;

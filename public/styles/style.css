@@ -182,19 +182,20 @@ h1 {
 
 h2 {
   font-family: summerFont;
-  font-size: 10rem; }
+  font-size: 11rem; }
   h2.about--heading {
     position: absolute;
     z-index: 1;
     left: 50%;
     top: -7px;
-    transform: translateX(-50%); }
+    transform: translateX(-50%);
+    width: 100%; }
 
 h4 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
   width: 100%; }
 
@@ -214,6 +215,14 @@ img {
 
 section {
   padding-bottom: 100px; }
+
+.upperCase_heading, .about__text h4, .countdown ul li h3:last-child, form h4, form input[type="submit"] {
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1.6rem;
+  color: #DEB886; }
+  .upperCase_heading li a, .about__text h4 li a, .countdown ul li h3:last-child li a, form h4 li a, form input[type="submit"] li a {
+    color: #DEB886; }
 
 header {
   background: url(../assets/bg_header.png);
@@ -237,14 +246,6 @@ nav {
     justify-content: space-between;
     max-width: 350px;
     margin: 0 auto; }
-
-.upperCase_heading, .about__text h4, .countdown ul li h3:last-child, form h4, form input[type="submit"] {
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 1.6rem;
-  color: #DEB886; }
-  .upperCase_heading li a, .about__text h4 li a, .countdown ul li h3:last-child li a, form h4 li a, form input[type="submit"] li a {
-    color: #DEB886; }
 
 .hero {
   background: url(../assets/sylvia-patrick-header.jpg);
@@ -281,7 +282,7 @@ nav {
 
 .about__wrapper {
   display: flex;
-  background: #353E44;
+  background: #28333a;
   padding-bottom: 0;
   position: relative; }
   .about__wrapper figure {
@@ -300,7 +301,6 @@ nav {
       bottom: 0; }
 
 .about__text {
-  background: #353E44;
   width: 50%;
   padding: 50px 0 0px 90px; }
   .about__text h4 {
@@ -313,6 +313,8 @@ nav {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  .countdown h4 {
+    padding-top: 75px; }
   .countdown ul {
     display: flex;
     max-width: 700px;
@@ -336,7 +338,7 @@ form {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 100px;
-  background: #353E44;
+  background: #28333a;
   padding: 40px; }
   form input[type="text"],
   form textarea,
@@ -361,7 +363,8 @@ form {
     text-align: center;
     margin-bottom: 40px; }
   form h5 {
-    margin-top: 42px; }
+    margin-top: 42px;
+    font-size: 4rem; }
   form input[type="submit"] {
     width: 200px;
     padding: 15px;
@@ -384,13 +387,66 @@ form {
     justify-content: space-between;
     padding-bottom: 0; }
   .details h4 {
-    margin: 65px 0; }
+    margin: 65px 0 90px 0; }
   .details .details__wrap {
     width: 45%;
     margin-bottom: 40px; }
     .details .details__wrap .details__block {
       margin-bottom: 40px; }
+      .details .details__wrap .details__block li {
+        font-size: 1.7rem;
+        letter-spacing: 0.2rem;
+        color: #c8c8c8; }
     .details .details__wrap h3 {
-      text-align: left; }
+      text-align: left;
+      font-weight: 300;
+      font-size: 1.8rem; }
     .details .details__wrap a {
       border-bottom: 1px solid #c8c8c8; }
+
+.gallery {
+  padding-top: 100px;
+  background: url(../assets/bg_gallery.png) no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .gallery .wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 870px; }
+    .gallery .wrapper img {
+      width: 31%;
+      margin-bottom: 21px; }
+  .gallery h2 {
+    padding: 50px 0; }
+
+@media only screen and (max-width: 665px) {
+  .gallery .wrapper {
+    max-height: 1450px; }
+    .gallery .wrapper img {
+      width: 45%; } }
+
+@media only screen and (max-width: 550px) {
+  .gallery .wrapper {
+    max-height: 1350px; } }
+
+@media only screen and (max-width: 505px) {
+  .gallery .wrapper {
+    max-height: 1330px; } }
+
+@media only screen and (max-width: 500px) {
+  .gallery .wrapper {
+    max-height: none; }
+    .gallery .wrapper img {
+      width: 100%; } }
+
+footer {
+  background: #28333a; }
+
+.rights.upperCase_heading p, .about__text h4.rights p, .countdown ul li h3.rights:last-child p, form h4.rights p, form input.rights[type="submit"] p {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #a2a2a2;
+  line-height: 22px;
+  border-top: 1px solid #DEB886;
+  padding-top: 30px; }
