@@ -3,22 +3,63 @@
   min-height: 400px;
   background-image:
     linear-gradient(
-      rgba(53, 62, 68, 0.45), 
+      rgba(53, 62, 68, 0.45),
       rgba(53, 62, 68, 0.45)
     ),
     url(../assets/sylvia-patrick-count.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+
+  @include breakpoint(small) {
+    min-height: unset;
+    padding-top: 80px;
+    padding-bottom: 80px;
+	}
+
   h4 {
     padding-top: 75px;
+
+    @include breakpoint(small) {
+      padding-top: 0;
+    }
+
+    @include breakpoint(palm) {
+      font-size: 2rem;
+		}
   }
+
+  h5 {
+    @include breakpoint(small) {
+      margin-top: 80px;
+    }
+
+    @include breakpoint(palm) {
+      font-size: 5rem;
+      margin-top: 40px;
+      margin-bottom: 30px;
+		}
+  }
+
   ul {
     display: flex;
     max-width: 700px;
     justify-content: space-between;
     margin: 0 auto;
+
+    @include breakpoint(small) {
+      max-width: 500px;
+    }
+
+    @include breakpoint(palm) {
+      flex-wrap: wrap;
+		}
+
     li {
+      @include breakpoint(palm) {
+        flex-basis: 50%;
+      }
+
       h3:last-child {
         @extend .upperCase_heading;
         font-weight: 300;
@@ -28,6 +69,10 @@
 
   h3 {
     margin-top: 50px;
+
+    @include breakpoint(palm) {
+      margin-top: 0;
+		}
   }
 
 }
