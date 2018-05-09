@@ -3,37 +3,80 @@
 	padding-bottom: 35px;
 	background-image:
 	linear-gradient(
-	  rgba(53, 62, 68, 0.75), 
+	  rgba(53, 62, 68, 0.75),
 	  rgba(53, 62, 68, 0.75)
 	),
 	url(../assets/map.jpg);
 	background-size: cover;
 	background-position: center;
+
+	@include breakpoint(small) {
+		padding-top: 50px;
+		padding-bottom: 10px;
+	}
+
+	@include breakpoint(palm) {
+		padding-top: 40px;
+	}
+
 	.wrapper {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		padding-bottom: 0;
 	}
+
 	h4 {
 		margin: 65px 0 90px 0;
+
+		@include breakpoint(small) {
+			margin-top: 0;
+		}
+
+		@include breakpoint(palm) {
+			margin-bottom: 40px;
+			font-size: 3rem;
+		}
 	}
+
 	.details__wrap {
 		width: 45%;
 		margin-bottom: 40px;
+
+		@include breakpoint(small) {
+			margin-bottom: 0;
+		}
+
+		@include breakpoint(palm) {
+			width: 100%;
+		}
+
 		.details__block {
 			margin-bottom: 40px;
+
+			ul {
+				@include breakpoint(palm) {
+					margin-top: 5px;
+				}
+			}
+
 			li {
 				font-size: 1.7rem;
 				letter-spacing: 0.2rem;
 				color: $text-grey-light;
+
+				@include breakpoint(palm) {
+					font-size: 1.2rem;
+					line-height: 1.5;
+				}
 			}
 		}
+
 		h3 {
 			text-align: left;
 			font-weight: 300;
 			font-size: 1.8rem;
 		}
+
 		a {
 			border-bottom: 1px solid $text-grey-light;
 		}

@@ -1,0 +1,11 @@
+@mixin breakpoint($point) {
+  @if $point == palm {
+    @media (max-width: 575px) { @content ; }
+  }
+  @else if $point == small {
+    @media (max-width: 768px) { @content ; }
+  }
+ @else {
+    @media (max-width: $point) { @content ; }
+  }
+}

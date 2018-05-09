@@ -4,46 +4,59 @@
 	background-position: center;
 	background-size: cover;
 
-	.wrapper {
+	@include breakpoint(small) {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@include breakpoint(palm) {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	h2 {
+		padding: 50px 0;
+
+		@include breakpoint(small) {
+			padding-top: 30px;
+			padding-bottom: 80px;
+		}
+
+		@include breakpoint(palm) {
+			padding-top: 10px;
+			padding-bottom: 40px;
+		}
+	}
+
+	.gallery-items {
 		display: flex;
 		flex-flow: column wrap;
 		max-height: 870px;
+		margin-left: -21px;
+
+		@include breakpoint(small) {
+			max-height: 100vw;
+		}
+
+		@include breakpoint(palm) {
+			max-height: none;
+			margin-left: 0;
+		}
+
 		img {
-			width: 31%;
+			width: calc(33.33333% - 21px);
+			margin-left: 21px;
 			margin-bottom: 21px;
+
+			@include breakpoint(palm) {
+				width: 100%;
+				margin-left: 0;
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
 		}
 	}
-	h2 {
-		padding: 50px 0;
-	}
-}
 
-@media only screen and (max-width: 665px) {
-	.gallery .wrapper {
-		max-height: 1450px;
-		img {
-			width: 45%;
-		}
-	}
-}
-
-@media only screen and (max-width: 550px) {
-	.gallery .wrapper {
-		max-height: 1350px;
-	}
-}
-
-@media only screen and (max-width: 505px) {
-	.gallery .wrapper {
-		max-height: 1330px;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-	.gallery .wrapper {
-		max-height: none;
-		img {
-			width: 100%;
-		}
-	}
 }
