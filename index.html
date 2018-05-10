@@ -73,19 +73,19 @@
 	<section class="rsvp">
 		<div class="wrapper">
 			<h2>Will You Attend?</h2>
-			<form>
+			<form id="test-form">
 				<h5>RSVP</h5>
 				<h4>kindly respond by oct 10, 2018</h4>
-				<input type="text" placeholder="Names of Guests" name="">
-				<input type="text" placeholder="Number of adults attending" name="">
-				<select name="" id="">
+				<input type="text" placeholder="Names of Guests" name="name">
+				<input type="text" placeholder="Number of adults attending" name="number">
+				<select name="attending" id="">
 					<option value="yes">Yes</option>
 					<option value="no">No</option>
 				</select>
 				<!-- <input type="text" placeholder="Plus One - First Name" name="">
 				<input type="text" placeholder="Plus One - Last Name" name=""> -->
-				<textarea placeholder="Music Request" name="" id="" cols="30" rows="5"></textarea>
-				<input value="send" type="submit">
+				<textarea placeholder="Music Request" name="music" id="" cols="30" rows="5"></textarea>
+				<input value="send" id="submit-form" type="submit">
 			</form>
 		</div>
 	</section>
@@ -169,6 +169,7 @@
 	</footer>
 
 </body>
-<!-- <script src="./public/scripts/main.js"></script> -->
+<script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+<script src="./public/scripts/main.js"></script>
 
 </html>
