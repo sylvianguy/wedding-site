@@ -1,3 +1,5 @@
+'use strict';
+
 // 'use strict';
 
 // console.log("hello");
@@ -15,8 +17,8 @@ $(function () {
       method: "GET",
       dataType: "json",
       data: form
-    }).then(function(data){
-      console.log(data)
+    }).then(function (data) {
+      console.log(data);
     });
   });
 });
