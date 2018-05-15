@@ -18,6 +18,46 @@
   }
 }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease; 
+}
+
+.modal__block {
+  padding: 70px 39px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3D4859;
+  h2 {
+    margin-bottom: 53px;
+  }
+  a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid $accent-color;
+    max-width: 139px;
+    margin-top: 28px;
+    padding: 7px;
+    color: $accent-color;
+  }
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -33,6 +73,8 @@ form {
   input[type="text"],
   textarea,
   select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
     width: 47%;
     margin-bottom: 50px;
     background: none;
@@ -41,9 +83,14 @@ form {
     border-bottom: 2px solid $text-grey-light;
     color: $text-grey-light;
     padding: 10px;
+    transition: all 0.5s ease;
 
     &:nth-child(5n + 5) {
       width: 100%;
+    }
+
+    &:focus {
+      border-bottom: 2px solid $accent-color;
     }
 
     @include breakpoint(palm) {
@@ -79,6 +126,11 @@ form {
     margin: 0 auto;
     color: $accent-color;
     border: 1px solid $accent-color;
+    transition: all 0.5s ease;
+    &:hover {
+      border: 1px solid darken($accent-color, 15);
+      color: darken($accent-color, 15);
+    }
     @extend .upperCase_heading;
     text-align: center;
     font-weight: 300;

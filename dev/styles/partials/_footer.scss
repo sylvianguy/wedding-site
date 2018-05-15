@@ -1,5 +1,12 @@
 footer {
 	background: $dark-navy;
+	a {
+		transition: all 0.4s ease;
+		color: $accent-color;
+		&:hover {
+			color: darken($accent-color, 15);
+		}	
+	}
 }
 
 .rights.upperCase_heading p {

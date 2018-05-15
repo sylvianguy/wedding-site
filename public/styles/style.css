@@ -239,7 +239,10 @@ section {
   font-size: 1.6rem;
   color: #DEB886; }
   .upperCase_heading li a, .about__text h4 li a, .countdown ul li h3:last-child li a, form h4 li a, form input[type="submit"] li a {
-    color: #DEB886; }
+    color: #DEB886;
+    transition: all 0.4s ease; }
+  .upperCase_heading li:hover a, .about__text h4 li:hover a, .countdown ul li h3:last-child li:hover a, form h4 li:hover a, form input[type="submit"] li:hover a {
+    color: #ce954a; }
 
 header {
   background: url(../assets/bg_header.png);
@@ -437,6 +440,41 @@ nav {
       padding-top: 40px;
       padding-bottom: 40px; } }
 
+.modal {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease; }
+
+.modal__block {
+  padding: 70px 39px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3D4859; }
+  .modal__block h2 {
+    margin-bottom: 53px; }
+  .modal__block a {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #DEB886;
+    max-width: 139px;
+    margin-top: 28px;
+    padding: 7px;
+    color: #DEB886; }
+
+.show {
+  opacity: 1;
+  visibility: visible; }
+
 form {
   display: flex;
   flex-wrap: wrap;
@@ -450,6 +488,8 @@ form {
   form input[type="text"],
   form textarea,
   form select {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
     width: 47%;
     margin-bottom: 50px;
     background: none;
@@ -457,11 +497,16 @@ form {
     outline: none;
     border-bottom: 2px solid #c8c8c8;
     color: #c8c8c8;
-    padding: 10px; }
+    padding: 10px;
+    transition: all 0.5s ease; }
     form input[type="text"]:nth-child(5n + 5),
     form textarea:nth-child(5n + 5),
     form select:nth-child(5n + 5) {
       width: 100%; }
+    form input[type="text"]:focus,
+    form textarea:focus,
+    form select:focus {
+      border-bottom: 2px solid #DEB886; }
     @media (max-width: 575px) {
       form input[type="text"],
       form textarea,
@@ -487,8 +532,12 @@ form {
     margin: 0 auto;
     color: #DEB886;
     border: 1px solid #DEB886;
+    transition: all 0.5s ease;
     text-align: center;
     font-weight: 300; }
+    form input[type="submit"]:hover {
+      border: 1px solid #ce954a;
+      color: #ce954a; }
     @media (max-width: 575px) {
       form input[type="submit"] {
         width: 100%; } }
@@ -596,6 +645,11 @@ form {
 
 footer {
   background: #28333a; }
+  footer a {
+    transition: all 0.4s ease;
+    color: #DEB886; }
+    footer a:hover {
+      color: #ce954a; }
 
 .rights.upperCase_heading p, .about__text h4.rights p, .countdown ul li h3.rights:last-child p, form h4.rights p, form input.rights[type="submit"] p {
   text-align: center;

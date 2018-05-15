@@ -121,5 +121,10 @@ section {
 	color: $accent-color;
 	li a {
 		color: $accent-color;
+		transition: all 0.4s ease;
+
+	}
+	li:hover a {
+		color: darken($accent-color, 15);
 	}
 }
