@@ -184,10 +184,12 @@ h1 {
   font-size: 10rem;
   margin-bottom: 25px;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  margin-bottom: 53px; }
   @media (max-width: 575px) {
     h1 {
-      font-size: 6rem; } }
+      font-size: 6rem;
+      margin-bottom: 23px; } }
 
 h2 {
   font-family: summerFont;
@@ -218,9 +220,8 @@ h4 {
 
 h5 {
   font-size: 6rem;
-  font-family: Georgia, "Times New Roman", serif;
   margin-bottom: 33px;
-  font-weight: 100;
+  font-weight: 400;
   color: #DEB886;
   width: 100%;
   text-align: center;
@@ -309,6 +310,9 @@ nav {
     position: relative;
     z-index: 9;
     font-size: 2rem; }
+    @media (max-width: 768px) {
+      .hero h3 {
+        font-size: 1.5rem; } }
 
 .about {
   margin-top: 200px;
@@ -560,7 +564,8 @@ form {
     flex-wrap: wrap;
     justify-content: space-between; }
   .details h4 {
-    margin: 65px 0 90px 0; }
+    margin: 65px 0 90px 0;
+    letter-spacing: 1.2rem; }
     @media (max-width: 768px) {
       .details h4 {
         margin-top: 0; } }
@@ -592,10 +597,16 @@ form {
             line-height: 1.5; } }
     .details .details__wrap h3 {
       text-align: left;
-      font-weight: 300;
-      font-size: 1.8rem; }
+      font-weight: 400;
+      font-size: 1.9rem;
+      color: #c8c8c8; }
     .details .details__wrap a {
-      border-bottom: 1px solid #c8c8c8; }
+      color: #DEB886;
+      border-bottom: 1px solid #DEB886;
+      transition: all 0.4s ease; }
+      .details .details__wrap a:hover {
+        color: #ce954a;
+        border-bottom: 1px solid #ce954a; }
 
 .gallery {
   padding-top: 100px;

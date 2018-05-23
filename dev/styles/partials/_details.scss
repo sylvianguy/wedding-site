@@ -27,6 +27,7 @@
 
 	h4 {
 		margin: 65px 0 90px 0;
+		letter-spacing: 1.2rem;
 
 		@include breakpoint(small) {
 			margin-top: 0;
@@ -73,12 +74,20 @@
 
 		h3 {
 			text-align: left;
-			font-weight: 300;
-			font-size: 1.8rem;
+			font-weight: 400;
+			font-size: 1.9rem;
+			color: $text-grey-light;
 		}
 
 		a {
-			border-bottom: 1px solid $text-grey-light;
+			color: $accent-color;
+			border-bottom: 1px solid $accent-color;
+			transition: all 0.4s ease;
+			&:hover {
+				color: darken($accent-color, 15);
+				border-bottom: 1px solid darken($accent-color, 15);
+			}
+			
 		}
 	}
 }
